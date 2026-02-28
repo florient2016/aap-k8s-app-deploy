@@ -1,0 +1,5 @@
+---
+roles:
+  - name: deploy_nginx_k8s
+    src: https://github.com/florient2016/aap-k8s-app-deployment.git
+    version: main

@@ -1,0 +1,15 @@
+---
+- name: Ansible role to deploy nginx application
+  hosts: "dept_it:&env_dev:&k8s"
+  gather_facts: false
+
+  vars:
+    app_name: my-web-app
+    namespace: aap-deploy
+    node_port: 31080
+    replicas: 2
+    nginx_image: nginx:1.27-alpine
+    app_title: "Welcome - Fully Automated via AAP"
+    app_message: "Zero manual steps - deployed from Git"
+  roles:
+    - role: deploy_nginx_k8s
