@@ -4,7 +4,7 @@
   vars:
     app_name: my-web-app
     namespace: aap-deploy
-    node_port: 31080
+    node_port: "31080"
     replicas: 2
     nginx_image: nginx:1.27-alpine
     app_title: "Welcome - Fully Automated via AAP"
