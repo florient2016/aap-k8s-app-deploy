@@ -1,8 +1,6 @@
 ---
 - name: Ansible role to deploy nginx application
   hosts: "dept_it:&env_dev:&k8s"
-  gather_facts: false
-
   vars:
     app_name: my-web-app
     namespace: aap-deploy
